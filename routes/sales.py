@@ -21,3 +21,7 @@ def create_sale(book_id: int, customer_id: int, quantity: int, db: Session = Dep
 @router.get("/")
 def list_sales(db: Session = Depends(get_db)):
     return db.query(Sale).all()
+
+@router.get("/")
+def list_sales(db: Session = Depends(get_db)):
+    return db.query(Sale).all()
